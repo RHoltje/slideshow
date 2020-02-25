@@ -1,0 +1,32 @@
+<h1>Slide Show!</h1>
+
+<img name="slide" width="600" height="300" />
+
+<script>
+
+var i = 0; //i for iterator
+var images = []; //array for the slides
+var  time = 3000; //time between slides
+
+//Image list
+images[0] = "space_jam_photo3.jpg";
+images[1] = "space_jam_photo2.jpg";
+images[2] = "space_jam_photo8.jpg";
+//Change image function
+function changeImg(){
+	document.slide.src = images[i];
+
+	//iterate thru array
+	if (i < images.length - 1) {
+		i++;
+	} else {
+		//start over
+		i = 0;
+	}
+	
+	setTimeout("changeImg()", time);
+}
+
+window.onload=changeImg;
+
+</script>
