@@ -7,5 +7,5 @@ I followed along with this tutorial video by Traversy Media:
 
 All the code in one html file. The images are stored in an array that a function displays and iterates through.
 
-**All pictures propert of Warner Bros**
+**All pictures property of Warner Bros**
 
